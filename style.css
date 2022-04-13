@@ -49,12 +49,12 @@ a{
   width: 25%;
   height:309.26px;
   background-color:white;
-  background-image: url(classicski.jpg);
+  background-image: url(images/classicski.jpg);
   background-size:cover;
   background-position: center;
 }
 .image1:hover{
-  background-image:url(classicski.jpg);
+  background-image:url(images/classicski.jpg);
   opacity: 0.65
 }
 .image2{
@@ -64,12 +64,12 @@ a{
   width: 25%;
   height:309.26px;
   background-color:white;
-  background-image: url(gradhat.jpg);
+  background-image: url(images/gradhat.jpg);
   background-size:cover;
   background-position: center;
 }
 .image2:hover{
-  background-image: url(gradhat.jpg);
+  background-image: url(images/gradhat.jpg);
   opacity: 0.65
 }
 .image3{
@@ -79,12 +79,12 @@ a{
   width: 25%;
   height:309.26px;
   background-color:white;
-  background-image: url(touring.jpeg);
+  background-image: url(images/touring.jpeg);
   background-size:cover;
   background-position: center;
 }
 .image3:hover{
-  background-image: url(touring.jpeg);
+  background-image: url(images/touring.jpeg);
   opacity: 0.65
 }
 .text{

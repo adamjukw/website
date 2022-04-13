@@ -1,0 +1,115 @@
+body{
+  background-color: #b2c2b8;
+  color: black;
+  font-family: sans-serif;
+  font-size: 21px;
+  margin-top: 0px; margin-left:0px; margin-right:0px; margin-bottom:0px;
+
+
+}
+main{
+  height:951.75px;
+}
+div{
+  margin-top: 1px;
+}
+.headertop{
+  background-color:#50eb8a;
+    margin:0px;
+    padding:25px;
+    text-align:center;
+    text-transform: uppercase;
+    letter-spacing: 26px;
+    font-size: 45px;
+    font-family: sans-serif;
+}
+
+
+.float-contaier{
+ background-color: red;
+}
+.float-child{
+
+  text-align:center;
+  background-color: pink;
+  width:70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  height: 334.26px;
+}
+a{
+  padding-bottom:0px;
+  margin-bottom:0px;
+}
+
+.image1{
+  margin-top:0px;
+  float:left;
+  background-color:white;
+  width: 25%;
+  height:309.26px;
+  background-color:white;
+  background-image: url(classicski.jpg);
+  background-size:cover;
+  background-position: center;
+}
+.image1:hover{
+  background-image:url(classicski.jpg);
+  opacity: 0.65
+}
+.image2{
+  margin-top:0px;
+  float:left;
+  background-color:white;
+  width: 25%;
+  height:309.26px;
+  background-color:white;
+  background-image: url(gradhat.jpg);
+  background-size:cover;
+  background-position: center;
+}
+.image2:hover{
+  background-image: url(gradhat.jpg);
+  opacity: 0.65
+}
+.image3{
+  margin-top:0px;
+  float:left;
+  background-color:white;
+  width: 25%;
+  height:309.26px;
+  background-color:white;
+  background-image: url(touring.jpeg);
+  background-size:cover;
+  background-position: center;
+}
+.image3:hover{
+  background-image: url(touring.jpeg);
+  opacity: 0.65
+}
+.text{
+  margin-top:0px;
+  float:left;
+  background-color: #deeddd;
+  width: 75%;
+  height:309.26px;
+
+}
+p{
+  margin-left:30px;
+  margin-right:30px;
+  text-align:left;
+  font-family:Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;
+}
+.footer{
+  background-color: gray;
+  text-align:center;
+  width:100%;
+
+  margin-bottom: 0px;
+  font-size:15px;
+  line-height: 2;
+}
+.footerp{margin-bottom:0px;
+  text-align:center;
+}

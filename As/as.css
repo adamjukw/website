@@ -20,7 +20,34 @@ p{
   margin-right:30px;
   text-align:left;
   font-family:Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;
+
 }
+img{
+  padding:20px;
+}
+.left{
+  margin:0px;
+  float:left;
+  width:10%;
+  background-color:#a6e0b4;
+  height:722.6px;
+}
+.content{
+  float:left;
+  margin:0px;
+  width:80%;
+  margin:0px;
+}
+.right{
+  margin:0px;
+  float:right;
+  width:10%;
+  background-color:#a6e0b4;
+  height:722.6px;
+}
+
+
+
 
 
 .footer{
@@ -29,9 +56,9 @@ p{
   width:200px;
   height:50px;
   position:absolute;
-  bottom:0px;
+  top:0px;
   left:0px;
-  margin-bottom: 0px;
+  margin-top: 0px;
   font-size:15px;
   line-height: 3.5;
 }

@@ -54,10 +54,46 @@ img{
   background-color: gray;
   text-align:center;
   width:200px;
-  height:50px;
+  height:33.3px;
   position:absolute;
   top:0px;
   left:0px;
+  margin-top: 0px;
+  font-size:15px;
+  line-height: 3.5;
+}
+.footer1{
+  background-color: gray;
+  text-align:center;
+  width:200px;
+  height:33.3px;
+  position:absolute;
+  top:33.3px;
+  left:0px;
+  margin-top: 0px;
+  font-size:15px;
+  line-height: 3.5;
+}
+.footer2{
+  background-color: gray;
+  text-align:center;
+  width:200px;
+  height:33.4px;
+  position:absolute;
+  top:66.6px;
+  left:0px;
+  margin-top: 0px;
+  font-size:15px;
+  line-height: 3.5;
+}
+.navA{
+  background-color: gray;
+  text-align:center;
+  width:200px;
+  height:100px;
+  position:absolute;
+  top:0px;
+  right:0px;
   margin-top: 0px;
   font-size:15px;
   line-height: 3.5;

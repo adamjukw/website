@@ -1,0 +1,211 @@
+body{
+  margin: 0;
+  padding:0;
+  background-color: #3d495c;
+}
+
+.grid{
+  display:grid;
+  grid-gap:17px;
+  grid-template-columns:4px . 1fr 4px;
+  grid-template-rows: auto;
+  grid-template-areas:
+  ". text1 ."
+  ". img1 ."
+  ". text2 ."
+  ". img2 ."
+  ". footer .";
+}
+.grid-ath{
+  display:grid;
+  grid-gap:17px;
+  grid-template-columns:4px . 1fr 4px;
+  grid-template-rows: auto;
+  grid-template-areas:
+  ". img1 ."
+  ". text1 ."
+  ". img2 ."
+  ". text2 ."
+  ". img3 ."
+  ". text3 ."
+  ". footer .";
+}
+.grid-ass{
+  display:grid;
+  grid-gap:17px;
+  grid-template-columns:4px  1fr 4px;
+  grid-template-rows: auto;
+  grid-template-areas:
+  ". text1 ."
+  ". img1 ."
+  ". text2 ."
+  ". img2 ."
+  ". text3 ."
+  ". img3 ."
+  ". footer .";
+}
+
+      .text1{
+        grid-area:text1;
+        margin-top:5em;
+      }
+      .img1{
+        grid-area:img1;
+        margin-top:1em;
+      }
+      .text2{
+        grid-area:text2;
+        margin-top:3em;
+      }
+      .text3{
+        grid-area:text3;
+        margin-top:3em;
+      }
+      .img2{
+        grid-area:img2;
+        margin-top:1em;
+      }
+      .img3{
+        grid-area:img3;
+      }
+      .img4{
+        grid-area:img4;
+      }
+
+  p {
+    background-color:#8ca5e6;
+    border-radius:10px;
+    padding: 5px 20px;
+    font-size:1.25rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+   a:hover{
+     color:red;
+   }
+   .footer a{
+     padding: 0.5em;
+   }
+
+.banner{
+  background-image:url(../images/draw.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  grid-area:banner;
+  font-size:40px;
+  font-family: sans-serif;
+  background-color:white;
+  text-align: left;
+  letter-spacing: 5px;
+
+
+}
+
+
+  .menu{
+    margin-top:10px;
+    grid-area:menu;
+    text-align: center;
+    border-radius: 3px;
+    padding: 3px 10px;
+    background-color:pink;
+    font-size:1.25rem;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 200px;
+
+  }
+  .mencont{
+    display:block;
+    }
+    .subbanner{
+      font-size:20px;
+      letter-spacing: normal;
+    }
+
+
+    .footer{
+      background-color: gray;
+      text-align:center;
+      font-size:1.4rem;
+      padding-top:1em;
+      padding-bottom:1em;
+    }
+
+
+
+
+    @media screen and (min-width: 736px )
+    {
+      .banner{
+
+          background-image:url(../images/draw.png);
+          background-size:contain;
+          background-position: right;
+          background-repeat: no-repeat;
+        padding-top:10px;
+        padding-bottom:20px;
+        letter-spacing:20px;
+        font-size:5rem;
+        text-align: center;
+      }
+      .menu{
+        background-color:pink;
+        font-size:25px;
+        position:absolute;
+        top:6%;
+        left:2%;
+        padding:5px;
+        border-radius: 3px;
+        transform: translate(0%, 0%);
+      }
+      .mencont{
+        position:relative;
+        display:none;
+        font-size:20px;
+      }
+      .menu:hover .mencont{
+        display:block;
+        position: relative;
+        line-height: 1.5;
+        text-align:left;
+      }
+
+
+      .grid{
+        display: grid;
+        grid-template-columns: 30px 1fr 1fr 1fr 30px;
+        grid-template-rows:auto;
+        grid-template-areas:
+        ". text1 text1 img1 ."
+        ". text1 text1 img1 ."
+        ". img2 text2 text2 ."
+        ". img2 text2 text2 ."
+        ". footer footer footer .";
+        }
+
+        .grid-ath{
+          display: grid;
+          grid-template-columns: 30px 1fr 1fr 1fr 30px;
+          grid-template-rows:auto;
+          grid-template-areas:
+          ". img1 text1 text1 ."
+          ". text2 text2 img3 ."
+          ". img2 text3 img3 ."
+          ". footer footer footer .";
+        }
+        .grid-ath{
+          display: grid;
+          grid-template-columns: 30px 1fr 1fr 1fr 30px;
+          grid-template-rows:auto;
+          grid-template-areas:
+          ". img1 text1 img2 ."
+          ". img3 text2 img2 ."
+          ". img3 text3 text3 ."
+          ". footer footer footer .";
+        }
+
+    }

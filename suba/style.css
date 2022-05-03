@@ -1,7 +1,7 @@
 body{
   margin:0;
   padding:0;
-  background-color: #3d495c;
+  background-color: #657ea6;
 }
 
 .grid{
@@ -135,7 +135,7 @@ body{
         ". t3 t3 ."
         ". t4 t4 .";
       }
-      
+
       .grid-sitemap{
         margin-top:1em;
         margin-bottom:2em;

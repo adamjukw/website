@@ -1,0 +1,230 @@
+*{
+/*box-sizing: border-box;
+background: rgb(0 100 0 / 0.1) !important;*/
+}
+
+body {
+	background-color: whitesmoke;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1em 1fr 1em;
+	grid-template-areas:
+	"header header header"
+	". about ."
+	". coen ."
+	". ski ."
+	". projects ."
+	"footer footer footer";
+}
+
+.header{
+	grid-area: header;
+	margin: 0;
+	padding: 0;
+	background-size: 100vh;
+	background-image: 
+	linear-gradient(
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25) 
+  	), url(images/touring.jpeg);
+  	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover ;
+	height: 100vh;
+	
+}
+
+h1{
+	margin: 0;
+	text-align: center;
+	color: white;
+	padding-top: 40vh;
+	padding-bottom: auto;
+	font-size: 3em;
+	font-weight:auto;
+	text-shadow:  2px 2px 6px #FF0000;
+}
+h2{
+	margin: 0;
+	text-align: center;
+	color: white;
+	padding-top: 2em;
+	padding-bottom: auto;
+	font-size: 1.7em;
+}
+
+.abtit, .coentit, .skitit{
+	font-size: 2em;
+}
+.abtxt,.coentxt,.skitxt{
+	font-size: 1.25em;
+}
+
+.about{
+	grid-area: about;
+	margin-top: 2em !important;
+	border: 2px red solid;
+	margin: 0 auto;
+	background-image: url(images/adam.jpg);
+	background-size: 50%;
+	background-origin:padding-box;
+
+	background-repeat: no-repeat;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows:auto ;
+	grid-template-areas: 
+	". abtit"
+	". abtxt";
+	max-width: 901px;
+	min-height: 300px;
+	}
+
+.abtit{
+	grid-area: abtit;
+	text-align: center;
+}
+.abtxt{
+	padding: 0 12%;
+	grid-area: abtxt;
+	font-size: 1.2em;
+}
+
+.abimg{
+	display: none;
+	grid-area: abimg;
+	;
+}
+
+
+.coen{
+	grid-area: coen;
+	margin-top: 2em !important;
+	border: 2px red solid;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows:auto ;
+	grid-template-areas: 
+	"coenimg coentit"
+	"coenimg coentxt";
+	max-width: 901px;
+	}
+
+.coentit{
+	grid-area: coentit;
+	text-align: center;
+}
+.coentxt{
+	padding: 0 12%;
+	grid-area: coentxt;
+	font-size: 1.2em;
+}
+
+.coenimg{
+
+	grid-area: coenimg;
+	
+}
+
+
+.ski{
+	grid-area: ski;
+	margin-top: 2em !important;
+	border: 2px red solid;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows:auto ;
+	grid-template-areas: 
+	"skiimg skitit"
+	"skiimg skitxt";
+	max-width: 901px;
+	}
+
+.skitit{
+	grid-area: skitit;
+	text-align: center;
+}
+.skitxt{
+	padding: 0 12%;
+	grid-area: skitxt;
+	font-size: 1.2em;
+}
+
+.skiimg{
+
+	grid-area: skiimg;ski
+
+}
+
+
+.projects{
+	grid-area: projects;
+	margin-top: 2em !important;
+	border: 2px red solid;
+	margin: 0 auto;
+}
+
+.footer{
+	padding: 1em 0 0.5em 0;
+	grid-area: footer;
+	text-align: center;
+	background-color: lightgray;
+	font-size: 1.25em;
+}
+
+
+@media only screen and (max-width: 711px){
+
+
+	body{background-color:whitesmoke;}
+
+	.about{
+		display: grid;
+		grid-template-columns: 1fr;
+	grid-template-rows:auto ;
+	grid-template-areas: 
+	" abtit"
+	" abtxt"
+	"abimg";
+	background-color: whitesmoke;
+	background-image: none;
+	}
+	.abimg{
+		display: inline-flex;
+		justify-content: center;	
+	}
+
+	.coen{
+		display: grid;
+		grid-template-columns: 1fr;
+	grid-template-rows:auto ;
+	grid-template-areas: 
+	" coentit"
+	" coentxt"
+	"coenimg";
+	background-color: whitesmoke;
+	background-image: none;
+	}
+	.coenimg{
+		display: inline-flex;
+		justify-content: center;	
+	}
+	.ski{
+		display: grid;
+		grid-template-columns: 1fr;
+	grid-template-rows:auto ;
+	grid-template-areas: 
+	" skitit"
+	" skitxt"
+	"skiimg";
+	background-color: whitesmoke;
+	background-image: none;
+	}
+	.skiimg{
+		display: inline-flex;
+		justify-content: center;ski
+}

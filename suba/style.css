@@ -33,3 +33,9 @@ body{
     	margin: 2em auto;
     	line-height: 1.25em;
     }
+
+    .home{
+    	text-align: center;
+    	font-size: 1.3em;
+    	margin: 2.2em auto;
+    }

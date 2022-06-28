@@ -1,4 +1,35 @@
-*{
-	background-color:whitesmoke;
+
+body{
+	background-color: whitesmoke;
+	margin: 0;
+	padding: 0;
 
 }
+
+.banner{
+	background-color: white;
+      background-image:url(../images/draw.png);
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
+      grid-area:banner;
+      font-size:50px;
+      font-family: sans-serif;
+      background-color:white;
+      text-align: center;
+      letter-spacing: 5px;
+      }
+
+      .subbanner{
+      font-size:20px;
+      letter-spacing: normal;
+      background-color: none;
+
+    }
+
+
+    .contact{
+    	max-width: 400px;
+    	margin: 2em auto;
+    	line-height: 1.25em;
+    }

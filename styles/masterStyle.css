@@ -89,7 +89,7 @@ li a:hover{
 }
 
 a{
-	text-decoration: none;
+	
 	color: black;
 }
 
@@ -407,7 +407,6 @@ display: block;
 /**/
 }
 a{
-text-decoration: none;
 color: black;
 }
 .menu{
@@ -419,6 +418,10 @@ position: -o-sticky;
 position: sticky;
 top: 0;
 
+}
+.menuLink> a{
+	text-decoration: none;
+	
 }
 
 details > summary::marker {

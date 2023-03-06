@@ -1,0 +1,183 @@
+
+body{
+	background-color: whitesmoke;
+	margin: 0;
+	padding: 0;
+
+}
+
+h3{
+  padding-top: 10px;
+}
+h4{
+  font-size: larger;
+}
+p{
+  font-size: larger;
+}
+button{
+  font-size: larger;
+}
+
+.banner{
+  
+  
+  background-image:
+  linear-gradient(
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.25)
+    ), url(../images/touring.jpeg);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+  
+  grid-area:banner;
+  font-size:50px;
+  font-family: sans-serif;
+  
+  text-align: center;
+  letter-spacing: 5px;
+  min-height: 110px;
+  max-height: 130px;
+}
+
+
+
+.skiBanner{
+  color: white;
+  font-size: 60px;
+  background-image:
+  linear-gradient(
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.45)
+    ), url(../images/fqfqfqfq.jpeg);
+  
+
+}
+.greyBanner{
+  font: 60px;
+  color: white;
+ 
+  background-image:
+  linear-gradient(
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.45)
+    ), url(../images/surf.jpg);
+
+}
+
+.greyGrid{
+  display:grid;
+  grid-template-columns: 20px 1fr 20px;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  ". title ."
+  ". paragraph ."
+  ". simButtons ."
+  ". canvas ."
+  "footer footer footer"
+  ;
+  gap: 12px;
+}
+.title{
+  margin-top: 12px;
+  grid-area: title;
+  text-align: center;
+  
+}
+.paragraph{
+  grid-area: paragraph;
+}
+.simButtons{
+  grid-area: simButtons;
+}
+.canvas{
+  grid-area: canvas;
+  width:100%;
+  border: solid black 2px;
+ 
+}
+.skiGrid{
+  display:grid;
+  grid-template-columns: 20px 1fr 20px;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  ". title ."
+  ". paragraph ."
+  ". imgRugby ."
+  ". imgPodium ."
+  ". imgSkate ."
+  ". canvas ."
+  "footer footer footer"
+  ;
+  gap: 12px;
+}
+.imgSkate{
+  grid-area: imgSkate;
+  width:80%
+}
+.imgPodium{
+  grid-area: imgPodium;
+  width: 80%;
+}
+.imgRugby{
+  grid-area: imgRugby;
+  width:100%;
+}
+
+
+.footer{
+  grid-area:footer;
+  background-color: grey;
+  height: 20px;
+  
+}
+
+.contact{
+  max-width: 400px;
+  margin: 2em auto;
+  line-height: 1.25em;
+}
+
+.home{
+  text-align: center;
+  font-size: 1.3em;
+  margin: 2.2em auto;
+}
+@media only screen and (max-width: 959px){
+
+  .skiBanner>h3{
+    
+    font-size:55px ;
+  }
+}
+@media only screen and (max-width: 780px){
+
+  .skiBanner>h3{
+    
+    font-size:50px ;
+  }
+}
+@media only screen and (max-width: 759px){
+  .banner{
+    font-size: 40px;
+  }
+  .skiBanner>h3{
+    
+    font-size:40px ;
+  }
+}
+@media only screen and (max-width: 394px){
+  .banner{
+    font-size: 30px;
+  }
+  .skiBanner>h3{
+    
+    font-size:30px ;
+  }
+  .greyBanner>h3{
+    font-size: 40px;
+  }
+
+
+}

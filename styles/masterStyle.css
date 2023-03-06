@@ -1,0 +1,462 @@
+*{
+	box-sizing: border-box;
+	
+		margin: 0;
+		padding: 0;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+	}
+	
+	body {
+		background-color: whitesmoke;
+		margin: auto;
+		padding: 0;
+		
+	}
+	
+	.header{
+
+		margin: 0;
+		padding: 0;
+		
+		background-image:
+		linear-gradient(
+		  rgba(0, 0, 0, 0.25),
+		  rgba(0, 0, 0, 0.25)
+		  ), url(../images/touring.jpeg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size:cover ;
+		height: calc(100vh - var(--vh-offset, 0px));
+		height: 100vh;
+		height: calc(var(--vh ,1vh)*100);
+		
+	
+	}
+	
+	h1{
+		margin: 0;
+		text-align: center;
+		color: white;
+		padding-top: 40vh;
+		padding-bottom: auto;
+		font-size: 3em;
+		font-weight:auto;
+		text-shadow:  2px 2px 6px #FF0000;
+	}
+	h2{
+		margin: 0;
+		text-align: center;
+		color: white;
+		padding-top: 2em;
+		padding-bottom: auto;
+		font-size: 1.7em;
+	}
+	
+	ul{
+		background-color: gray;
+		position: -webkit-sticky;
+		position: -moz-sticky;
+		position: -ms-sticky;
+		position: -o-sticky;
+		position: sticky;
+		top: 0;
+		
+		
+		list-style: none;
+		padding: 0px 10dvw 0 0;
+		width: 100%;	
+		margin: 0;
+		overflow: hidden;
+		
+	}
+	li{
+		
+		border-right: 2px solid black;
+		float: left;		
+	}
+	li:last-child{
+		border-right: none;
+	}
+	li a{
+		display: block;
+		color:black;
+		text-decoration: none;
+		font-size: 1.45em;
+		text-align: center;
+		padding: 12px 10px;
+	}
+	li a:hover{
+		font-weight: bolder;
+	}
+	.active{
+		text-shadow: 3px -3px 2px rgba(0, 0, 0, 0.25);
+	}
+	a{
+		text-decoration: none;
+		color: black;
+	}
+	
+	
+	.mainGrid {
+		background-color: whitesmoke;
+		margin: auto;
+		padding: 0;
+		display: grid;
+		grid-template-rows: auto;
+		grid-template-columns: 100px 1fr 100px;
+		grid-template-areas:
+		
+		"sidebar about sidebarr"
+		"sidebar ski sidebarr"
+		"sidebar greyMatter sidebarr"
+		"sidebar coen sidebarr"
+		"footer footer footer";
+	}
+	.sidebar, .sidebarr{
+		grid-area: sidebar;
+		background-color: white;
+	}
+	.sidebarr{
+		grid-area: sidebarr;
+		
+	}
+	
+	.abtit, .coentit, .skitit, .greyMattertit{
+		font-size: 2em;
+	}
+	.abtxt,.coentxt,.skitxt, .greyMattertxt{
+		font-size: 1.25em;
+	}
+	
+	.about,.ski,.greyMatter,.coen{
+		margin-top: 140px !important;
+		background-color: transparent;
+	}
+	.about{
+		grid-area: about;
+		margin-top: 120px !important;
+		
+	
+		margin: 0 auto;
+		background-image: url(../images/adam.jpg);
+		background-size: 50%;
+		background-origin:padding-box;
+	
+		background-repeat: no-repeat;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows:auto ;
+		grid-template-areas:
+		". abtit"
+		". abtxt";
+		max-width: 901px;
+		min-height: 300px;
+		}
+	
+	.abtit{
+		grid-area: abtit;
+		text-align: center;
+	}
+	.abtxt{
+		padding: 0 12%;
+		grid-area: abtxt;
+		font-size: 1.2em;
+	}
+	
+	.abimg{
+		display: none;
+		grid-area: abimg;
+		;
+	}
+	
+	
+	
+	.ski{
+		
+		grid-area: ski;
+	
+		
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows:auto ;
+		grid-template-areas:
+		"skiimg skitit"
+		"skiimg skitxt";
+		max-width: 901px;
+		}
+	
+	.skitit{
+		grid-area: skitit;
+		text-align: center;
+	}
+	.skitxt{
+		padding: 0 12%;
+		grid-area: skitxt;
+		font-size: 1.2em;
+	}
+	
+	.skiimg{
+	
+		grid-area: skiimg;
+	
+	}
+	
+	.greyMatter{
+		
+		grid-area: greyMatter;
+	
+		
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows:auto ;
+		grid-template-areas:
+		"greyMattertit greyMatterimg"
+		"greyMattertxt greyMatterimg";
+		max-width: 901px;
+		}
+	
+	.greyMattertit{
+		grid-area: greyMattertit;
+		text-align: center;
+	}
+	.greyMattertxt{
+		padding: 0 12%;
+		grid-area: greyMattertxt;
+		font-size: 1.2em;
+	}
+	
+	.greyMatterimg{
+	
+		grid-area: greyMatterimg;
+	
+	}
+	
+	.coen{
+		
+		grid-area: coen;
+	
+		
+		margin: 0 auto;
+		margin-bottom: 10px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows:auto ;
+		grid-template-areas:
+		"coenimg coentit"
+		"coenimg coentxt";
+		max-width: 901px;
+		}
+	
+	.coentit{
+		grid-area: coentit;
+		text-align: center;
+	}
+	.coentxt{
+		padding: 0 12%;
+		grid-area: coentxt;
+		font-size: 1.2em;
+	}
+	
+	.coenimg{
+	
+		grid-area: coenimg;
+	
+	}
+	
+	
+	
+	.footer{
+		
+		padding: 1em 0 0.5em 0;
+		grid-area: footer;
+		text-align: center;
+		background-color: gray;
+		font-size: 1.5em;
+		
+	}
+	.footer a{
+		text-decoration: underline !important;
+
+	}
+	
+	
+	
+	.footer p{
+		display: inline;
+		
+		margin-left:10px;
+	}
+	
+	
+	.menu{
+		display: none;
+		font-size: 40px;
+		
+		
+	}
+	summary::marker {
+		
+		content: "≡";
+	}
+	
+	/*TODO: change @media to @ container w/ inline-size containers
+	
+	put container changes before the query I believe */
+	@media only screen and (max-width:1981px) {
+		.about{
+			
+			background-color: transparent;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows:auto ;
+			grid-template-areas:
+			" abtit"
+			" abtxt"
+			"abimg";
+			background-color: whitesmoke;
+			background-image: none;
+		}
+		.abimg{
+			display: inline-flex;
+			justify-content: center;
+			max-width: 600px;
+			margin: 0 auto;
+		}
+	}
+	@media only screen and (max-width: 811px){
+	
+	
+		
+		.mainGrid{
+			grid-template-columns: 10px 1fr 10px;
+		}
+	
+	@media only screen and (max-width: 511px){
+	
+	
+		body{background-color:whitesmoke;}
+	
+		ul{
+			padding:0; 
+		}
+		.mainGrid{
+			grid-template-columns: 10px 1fr 10px;
+		}
+	
+		.greyMatter, .coen, .ski{
+			/*border:pink solid 3px;
+			background-color: pink;*/
+		}
+	
+		
+	
+		.greyMatter{
+			display: grid;
+			grid-template-columns: 1fr;
+		grid-template-rows:auto ;
+		grid-template-areas:
+		" greyMattertit"
+		" greyMattertxt"
+		"greyMatterimg";
+		
+		background-image: none;
+		}
+		.greyMatterimg{
+			display: inline-flex;
+			justify-content: center;
+		}
+	
+		.coen{
+			display: grid;
+			grid-template-columns: 1fr;
+		grid-template-rows:auto ;
+		grid-template-areas:
+		" coentit"
+		" coentxt"
+		"coenimg";
+		
+		background-image: none;
+		}
+		.coenimg{
+			display: inline-flex;
+			justify-content: center;
+		}
+		.ski{
+			display: grid;
+			grid-template-columns: 1fr;
+		grid-template-rows:auto ;
+		grid-template-areas:
+		" skitit"
+		" skitxt"
+		"skiimg";
+	
+		background-image: none;
+		}
+		.skiimg{
+			display: inline-flex;
+			justify-content: center;
+		}
+	
+		@media only screen and (max-width: 400px){
+			.mainGrid{
+				grid-template-columns:5px 1fr 5px;
+			}
+			.sidebar, .sidebarr{
+				
+				background-color:transparent;
+			}
+			ul{
+				display: none;
+	
+				
+	
+			}
+			li{
+				float:none !important;
+				/* display: none; */
+				border: none;
+			}
+			li:first-child {
+				display: block;
+			}
+			.active{
+				/**/
+			}
+			a{
+				text-decoration: none;
+				color: black;
+			}
+			.menu{
+				display: block;
+				background-color: gray;
+				position: -webkit-sticky;
+				position: -moz-sticky;
+				position: -ms-sticky;
+				position: -o-sticky;
+				position: sticky;
+				top: 0;
+				
+			}
+			details > summary::marker {
+			
+				content: "≡";
+				
+			}
+			
+			details[open] > summary::marker {
+		
+				content: "≡";
+				
+			}
+			
+			.menuLink{ 
+			   
+				font-size: 0.7em;
+				text-align: left;
+				padding-left: 12%;
+			
+			}
+		}
+	}

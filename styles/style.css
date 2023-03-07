@@ -65,10 +65,15 @@ button{
     ), url(../images/surf.jpg);
 
 }
-
+.greyGrid, .skiGrid{
+  margin-right: auto;
+  margin-left: auto;
+}
 .greyGrid{
+  
   display:grid;
-  grid-template-columns: 20px 1fr 20px;
+
+  grid-template-columns: 30px 1fr 30px;
   grid-template-rows: auto;
   grid-template-areas: 
   ". title ."
@@ -78,6 +83,11 @@ button{
   "footer footer footer"
   ;
   gap: 12px;
+}
+.title, .paragraph, .simButtons, .canvas, .imgSkate, .imgPodium , .imgRugby{
+  margin-left: auto;
+  margin-right: auto;
+  max-width:751px;
 }
 .title{
   margin-top: 12px;
@@ -112,6 +122,7 @@ button{
   ;
   gap: 12px;
 }
+
 .imgSkate{
   grid-area: imgSkate;
   width:80%
@@ -127,6 +138,7 @@ button{
 
 
 .footer{
+  display: inline;
   grid-area:footer;
   background-color: grey;
   height: 20px;

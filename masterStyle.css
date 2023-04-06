@@ -18,7 +18,7 @@ body {
 	linear-gradient(
 	rgba(0, 0, 0, 0.25),
 	rgba(0, 0, 0, 0.25)
-	), url(../images/touring.jpeg);
+	), url(images/touring.jpeg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size:cover ;
@@ -33,22 +33,24 @@ h1{
 	color: white;
 	padding-top: 40vh;
 	padding-bottom: auto;
-	font-size: 3em;
+	font-size: 60px;
 	font-weight:auto;
 	text-shadow:  2px 2px 6px #FF0000;
+	overflow:hidden; 
 }
 
-h2{
-	margin: 0;
+h3{
+	font-size: 35px;
 	text-align: center;
-	color: white;
-	padding-top: 2em;
-	padding-bottom: auto;
-	font-size: 1.7em;
 }
+p{
+	font-size: 20px;
+}
+
 
 ul{
-	background-color: gray;
+	background-color: black;
+	background:rgba(0, 0, 0, 0.8);
 	position: -webkit-sticky;
 	position: -moz-sticky;
 	position: -ms-sticky;
@@ -73,9 +75,9 @@ li:last-child{
 
 li a{
 	display: block;
-	color:black;
+	color:white;
 	text-decoration: none;
-	font-size: 25px;
+	font-size: 23px;
 	text-align: center;
 	padding: 12px 10px;
 }
@@ -84,14 +86,13 @@ li a:hover{
 	font-weight: bolder;
 }
 
-.active{
-	text-shadow: 3px -3px 2px rgba(0, 0, 0, 0.25);
-}
 
 a{
 	
-	color: black;
+	color: green;
 }
+
+
 
 .mainGrid {
 	background-color: whitesmoke;
@@ -102,37 +103,32 @@ a{
 	grid-template-columns: 100px 1fr 100px;
 	grid-template-areas:
 
-	"sidebar about sidebarr"
-	"sidebar ski sidebarr"
-	"sidebar greyMatter sidebarr"
-	"sidebar coen sidebarr"
+	"sidebarLeft about sidebarRight"
+	"sidebarLeft ski sidebarRight"
+	"sidebarLeft academia sidebarRight"
+	"sidebarLeft contact sidebarRight"
 	"footer footer footer";
 }
 
-.sidebar, .sidebarr{
-	grid-area: sidebar;
+.sidebarLeft, .sidebarRight{
+	grid-area: sidebarLeft;
 	background-color: white;
 }
-.sidebarr{
-	grid-area: sidebarr;
+.sidebarRight{
+	grid-area: sidebarRight;
 
 }
 
-.abtit, .coentit, .skitit, .greyMattertit{
-	font-size: 2em;
-}
-.abtxt,.coentxt,.skitxt, .greyMattertxt{
-	font-size: 1.25em;
-}
 
-.about,.ski,.greyMatter,.coen{
-	
-	margin-top: 140px !important;
+.about,.ski,.academia,.contact{
+	margin-top: 80px !important;
+	padding-top: 55px;
 	background-color: transparent;
 }
+
 .about{
 	grid-area: about;
-	margin-top: 120px !important;
+	margin-top: 50px !important;
 	margin: 0 auto;
 	background-image: url(../images/adam.jpg);
 	background-size: 50%;
@@ -148,21 +144,18 @@ a{
 	max-width: 901px;
 	min-height: 300px;
 }
-
 .abtit{
 	grid-area: abtit;
 	text-align: center;
 }
+
 .abtxt{
 	padding: 0 12%;
 	grid-area: abtxt;
-	font-size: 1.2em;
 }
-
 .abimg{
 	display: none;
 	grid-area: abimg;
-;
 }
 
 .ski{
@@ -176,7 +169,6 @@ a{
 	"skiimg skitxt";
 	max-width: 901px;
 }
-
 .skitit{
 	grid-area: skitit;
 	text-align: center;
@@ -184,109 +176,44 @@ a{
 .skitxt{
 	padding: 0 12%;
 	grid-area: skitxt;
-	font-size: 1.2em;
-}
 
+}
 .skiimg{
 	grid-area: skiimg;
 }
 
-.greyMatter{
-	grid-area: greyMatter;
+.academia{
+	grid-area: academia;
 	margin: 0 auto;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows:auto ;
-	grid-template-areas:
-	"greyMattertit greyMatterimg"
-	"greyMattertxt greyMatterimg";
-	max-width: 901px;
+	
+	max-width: 550px;
+	line-height: 1.2;
+	text-align: left;
 }
-
-.greyMattertit{
-	grid-area: greyMattertit;
-	text-align: center;
+.contact{
+	grid-area:contact;
+	margin:0 auto;
+	max-width: 400px;
+	text-align: left;
 }
-.greyMattertxt{
-	padding: 0 12%;
-	grid-area: greyMattertxt;
-	font-size: 1.2em;
+.contact p{
+	font-size: 16px;
 }
-
-.greyMatterimg{
-	grid-area: greyMatterimg;
+.contact h3{
+	font-size: 25px;
 }
-
-.coen{
-	grid-area: coen;
-	margin: 0 auto;
-	margin-bottom: 10px;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows:auto ;
-	grid-template-areas:
-	"coenimg coentit"
-	"coenimg coentxt";
-	max-width: 901px;
-}
-
-.coentit{
-	grid-area: coentit;
-	text-align: center;
-}
-.coentxt{
-	padding: 0 12%;
-	grid-area: coentxt;
-	font-size: 1.2em;
-}
-
-.coenimg{
-
-	grid-area: coenimg;
-
-}
-
-
 
 .footer{
 
-padding: 1em 0 0.5em 0;
+padding: 10px 0 5px 10px;
 grid-area: footer;
 text-align: center;
-background-color: gray;
-font-size: 1.5em;
-
-}
-.footer a{
-text-decoration: underline !important;
+background-color: black;
 
 }
 
 
 
-.footer p{
-display: inline;
-
-margin-left:10px;
-}
-
-
-.menu{
-display: none;
-font-size: 46px;
-
-}
-details{
-	background-color: grey;
-}
-summary::marker {
-
-content: "≡";
-}
-
-/*TODO: change @media to @ container w/ inline-size containers
-
-put container changes before the query I believe */
 @media only screen and (max-width:1981px) {
 .about{
 
@@ -308,13 +235,17 @@ max-width: 600px;
 margin: 0 auto;
 }
 }
+
+
+
 @media only screen and (max-width: 811px){
-
-
 
 .mainGrid{
 grid-template-columns: 10px 1fr 10px;
 }
+
+
+
 
 @media only screen and (max-width: 511px){
 
@@ -328,44 +259,25 @@ padding:0;
 grid-template-columns: 10px 1fr 10px;
 }
 
-.greyMatter, .coen, .ski{
-/*border:pink solid 3px;
-background-color: pink;*/
-}
 
 
-
-.greyMatter{
+.academia{
 display: grid;
 grid-template-columns: 1fr;
 grid-template-rows:auto ;
 grid-template-areas:
-" greyMattertit"
-" greyMattertxt"
-"greyMatterimg";
+" academiatit"
+" academiatxt"
+"academiaimg";
 
 background-image: none;
 }
-.greyMatterimg{
+.academiaimg{
 display: inline-flex;
 justify-content: center;
 }
 
-.coen{
-display: grid;
-grid-template-columns: 1fr;
-grid-template-rows:auto ;
-grid-template-areas:
-" coentit"
-" coentxt"
-"coenimg";
 
-background-image: none;
-}
-.coenimg{
-display: inline-flex;
-justify-content: center;
-}
 .ski{
 display: grid;
 grid-template-columns: 1fr;
@@ -382,65 +294,40 @@ display: inline-flex;
 justify-content: center;
 }
 
+
+
 @media only screen and (max-width: 440px){
-.mainGrid{
-grid-template-columns:5px 1fr 5px;
-}
-.sidebar, .sidebarr{
+	.mainGrid{
+	grid-template-columns:5px 1fr 5px;
+	}
+	.sidebar, .sidebarr{
 
-background-color:transparent;
-}
-ul{
-display: none;
-
-
-
-}
-li{
-float:none !important;
-/* display: none; */
-border: none;
-}
-li:first-child {
-display: block;
-}
-.active{
-/**/
-}
-a{
-color: black;
-}
-.menu{
-display: block;
-position: -webkit-sticky;
-position: -moz-sticky;
-position: -ms-sticky;
-position: -o-sticky;
-position: sticky;
-top: 0;
-
-}
-.menuLink> a{
-	text-decoration: none;
+	background-color:transparent;
+	}
 	
-}
+	li a{
+	font-size: 20px;
+	}
+	li:first-child {
+	display: block;
+	}
+	a{
+	color: black;
+	}
 
-details > summary::marker {
-
-content: "≡";
-
-}
-
-details[open] > summary::marker {
-content: "≡";
-}
-
-.menuLink{ 
-opacity: 1 !important;
-font-size: 0.8em;
-text-align: left;
-padding-left: 12%;
 
 }
+
+@media only screen and (max-width: 360px){
+	li>a{
+		font-size: 15px;
+	}
+
 }
+@media only screen and (max-width: 280px){
+	ul{display: none;}
+	li{
+		float: none;
+	}
+
 }

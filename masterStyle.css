@@ -347,6 +347,11 @@ display: inline-flex;
 justify-content: center;
 }
 
+.skitxt{
+	text-align: center;
+}
+
+}
 
 
 @media only screen and (max-width: 440px){
@@ -371,16 +376,21 @@ justify-content: center;
 
 }
 
-@media only screen and (max-width: 360px){
+@media only screen and (max-width: 380px){
 	li>a{
-		font-size: 15px;
+		font-size: 14.5px;
 	}
 
 }
-@media only screen and (max-width: 280px){
+@media only screen and (max-width: 305px){
+	li>a{
+		font-size: 13.5px;
+	}
+
+}
+@media only screen and (max-width: 289px){
 	ul{display: none;}
 	li{
 		float: none;
 	}
-
 }
